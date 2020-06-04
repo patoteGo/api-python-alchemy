@@ -7,10 +7,15 @@ verify_ssl = true
 
 [scripts]
 start="python src/app.py"
+db-init="flask db init"
+migrate="flask db migrate"
+upgrade="flask db upgrade"
 
 [packages]
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
+flask-migrate = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.8"

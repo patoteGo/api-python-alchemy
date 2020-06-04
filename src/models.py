@@ -7,7 +7,7 @@ class Person(db.Model):
   name = db.Column(db.String(100), nullable=False)
   last_name = db.Column(db.String(100), nullable=False)
   active = db.Column(db.Boolean, nullable=False)
-  users = db.relationship('User', backref='person', lazy=True)
+#   users = db.relationship('User', backref='person', lazy=True)
 
   def serialize(self):
     return {
