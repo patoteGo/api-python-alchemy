@@ -5,6 +5,9 @@ verify_ssl = true
 
 [dev-packages]
 
+[scripts]
+start="python src/app.py"
+
 [packages]
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
